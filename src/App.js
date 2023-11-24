@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
 import HeroSection from './components/HeroSection';
 import CenterText from './components/centerText';
 import Slider from './components/slider';
+import { Deploy } from './components/deploy';
+import WhiteBox from './components/whiteBox';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <HeroSection/>
       <CenterText/>
       <Slider/>
+      <Deploy/>
+      <WhiteBox/>
     </div>
   );
 }

@@ -9,18 +9,18 @@ import Image from "../images/Group 31.svg"
 function slider() {
   return (
     <div>
-    <div className='flex justify-between mx-10 xl:mx-[150px] 2xl:justify-center 2xl:gap-28 items-center mt-16 xl:mt-24 2xl:mt-36 mb-4'>
+    <div className='flex justify-between  mx-24 me-32 xl:mx-[250px] 2xl:gap-10 items-center mt-6 xl:mt-10 2xl:me-50 2xl:mt-10 min-[1750px]:me-[500px] mb-4'>
         <p className='max-w-[200px] font-Mont text-[26px] text-white font-[600]'>Our Clients Have Been Featured In</p>
         <div className='flex gap-8'>
-            <img src={Time} alt=''/>
-            <img src={WSJ} alt=''/>
-            <img src={CNBC} alt=''/>
-            <img src={Reuters} alt=''/>
-            <img src={CNN} alt=''/>
-            <img src={Image} alt=''/>
+            <img src={Time} alt='' className='w-[50px] xl:w-[60px] min-[1350px]:w-[70px] 2xl:w-[100px]'/>
+            <img src={WSJ} alt='' className='w-[50px] xl:w-[60px] min-[1350px]:w-[70px] 2xl:w-[100px]'/>
+            <img src={CNBC} alt='' className='w-[50px] xl:w-[60px] min-[1350px]:w-[70px] 2xl:w-[100px]'/>
+            <img src={Reuters} alt='' className='w-[50px] xl:w-[60px] min-[1350px]:w-[70px] 2xl:w-[100px]'/>
+            <img src={CNN} alt='' className='w-[50px] xl:w-[60px] min-[1350px]:w-[70px] 2xl:w-[100px]'/>
+            <img src={Image} alt='' className='w-[50px] xl:w-[60px] min-[1350px]:w-[70px] 2xl:w-[100px]'/>
         </div>
     </div>
-    <hr className='mx-10 xl:mx-[150px] 2xl:justify-center 2xl:gap-28 mb-4'/>
+    <hr className='mx-24 me-32 xl:mx-[250px] 2xl:gap-10 items-center mt-6 xl:mt-10 2xl:me-50 2xl:mt-10 min-[1750px]:me-[500px] mb-4'/>
     </div>
   )
 }

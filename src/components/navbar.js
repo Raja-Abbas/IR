@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from "../images/R logo.svg"
+import Getstarted from '../common/Getstarted'
+import Login from '../common/Login'
 
 function navbar() {
   return (
@@ -14,8 +16,8 @@ function navbar() {
         <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>Pricing</p>
         <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>Blog</p>
         <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>Contact</p>
-        <p className='text-[16px] font-[600] font-poppins border border-white rounded-[10px] py-[10px] px-[10px] cursor-pointer hover:bg-white hover:text-[#4E3FFB] transition-all'>Login</p>
-        <p className='text-[16px] font-[600] font-poppins bg-[#7DF4DC] py-[10px] px-[10px] rounded-[10px] text-[#4E3FFB] cursor-pointer hover:bg-[#4E3FFB] hover:text-[#7DF4DC] border border-[#7DF4DC] hover:border-[#7DF4DC] transition-all'>Get Started</p>
+        <Login/>
+       <Getstarted/>
     </div>
     </div>
   )

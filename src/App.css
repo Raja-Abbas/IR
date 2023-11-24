@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background: #4E3FFB;  
+}
+
 .App{
     background: #4E3FFB;
     width: 100%;
@@ -16,4 +20,80 @@
 .bottom-image{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+.label {
+    height: 70px;
+    width: 346px;
+    margin: auto;
+}
+
+.label .text-wrapper {
+    color: #ffffff;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 22px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 35.2px;
+    text-align: center;
+    top: 0;
+    width: 346px;
+    height: 70px;
+}
+
+.labeltwo {
+    height: 26px;
+    width: 346px;
+    margin: auto;
+}
+
+.labeltwo .text-wrappertwo {
+    color: #ffffff;
+    font-family: "Mont-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 25.6px;
+    opacity: 0.8;
+    text-align: center;
+    top: 0;
+    width: 346px;
+}
+
+
+.box {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    height: auto;
+    background: url(./images/Rectangle\ 7.svg);
+    background-size: cover;
+    border-radius: 30px;
+    padding: 150px 50px 150px 150px;
+        overflow: hidden;
+}
+
+
+.labelthree {
+    height: 174px;
+    width: 443px;
+}
+
+.labelthree .text-wrapperthree {
+    color: #222222;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 45px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 58.5px;
+}
+
+
+@media(min-width:2500px){
+    body{
+        width: 50%;
+        margin: auto;
+    }
 }
