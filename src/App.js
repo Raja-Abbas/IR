@@ -5,6 +5,7 @@ import CenterText from './components/centerText';
 import Slider from './components/slider';
 import { Deploy } from './components/deploy';
 import WhiteBox from './components/whiteBox';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Slider/>
       <Deploy/>
       <WhiteBox/>
+      <Footer/>
     </div>
   );
 }
