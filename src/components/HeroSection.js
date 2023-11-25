@@ -24,7 +24,7 @@ function HeroSection() {
           <p className="text-white">See us in action</p>
         </div>
       </div>
-      <div className="flex flex-col justify-center mx-auto">
+      <div className="flex flex-col justify-center mx-auto max-md:mx-2">
         <div className="max-w-[350px] bg-white max-h-[435px] rounded-[20px]">
           <p className="py-4 px-6 text-[#3A3640] font-Mont text-[14px]">
             rober@cnbc.com
