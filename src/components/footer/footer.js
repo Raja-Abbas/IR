@@ -10,7 +10,7 @@ function footer() {
         <div className='w-[200px] mx-auto text-center mt-5 mb-4 text-black'>
         <Getstarted/>
         </div>
-        <div className='mt-20 mb-10 border-[grey] mx-24 me-32 xl:mx-[250px] 2xl:gap-10 items-center xl:mt-10 2xl:me-50 2xl:mt-10 min-[1750px]:me-[500px] border-[0.001px]'>
+        <div className='mt-20 mb-10 border-[grey] mx-24 me-32 xl:mx-[250px] 2xl:gap-10 items-center xl:mt-10 2xl:me-50 2xl:mt-10 min-[1750px]:me-[500px] border-[0.001px] max-md:w-[100%] max-md:mx-0'>
         </div>
         <Footerlinks/>
     </div>
