@@ -5,7 +5,7 @@ import Login from '../common/Login'
 
 function navbar() {
   return (
-    <div className='flex justify-between mx-4 me-6 my-4 items-center'>
+    <div className='flex justify-between mx-4 me-6 my-4 items-center max-lg:hidden'>
     <div className='flex gap-2 items-center'>
         <img src={Image} alt=''/>
         <p className='text-white'>Intelligent<br/> Relations</p>

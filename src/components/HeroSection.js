@@ -4,8 +4,8 @@ import DoubleTick from "../images/doubletick.svg";
 
 function HeroSection() {
   return (
-    <div className="flex justify-between mx-24 xl:mx-[250px] 2xl:justify-center 2xl:gap-80 items-center mt-16 xl:mt-24 2xl:mt-36">
-      <div className="flex flex-col gap-2 text-white">
+    <div className="flex justify-between mx-24 xl:mx-[250px] 2xl:justify-center 2xl:gap-80 items-center mt-16 xl:mt-24 2xl:mt-36 max-lg:flex-col max-lg:gap-10">
+      <div className="flex flex-col gap-2 text-white max-lg:ml-10 max-md:ml-0">
         <div className="font-[700] text-[40px]">PR, meet AI</div>
         <p className="max-w-[400px] font-poppins font-[600] text-[16px]">
           Get the power of a full service professional PR team that harnesses

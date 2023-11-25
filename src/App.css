@@ -92,9 +92,9 @@ body{
 }
 
 
-@media(min-width:2500px){
-    body{
-        width: 50%;
-        margin: auto;
+
+@media(max-width:1000px){
+    .box{
+        padding: 10px;
     }
 }
