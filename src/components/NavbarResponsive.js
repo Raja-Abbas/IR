@@ -6,7 +6,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between py-8 px-8 lg:hidden">
+    <div className="flex items-center justify-between max-lg:py-8 max-lg:px-8 max-md:py-2 max-md:px-2 lg:hidden">
       <div className='flex gap-2 items-center'>
         <img src={LogoOne} alt=''/>
         <p className='text-white'>Intelligent<br/> Relations</p>
