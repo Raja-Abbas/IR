@@ -41,19 +41,19 @@ export default function Header() {
               </svg>
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/about">About</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/about">How We Work</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/about">Pricing</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/portfolio">Blog</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/contact">Contact</a>
               </li>
             </ul>
