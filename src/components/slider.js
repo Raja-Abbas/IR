@@ -20,7 +20,7 @@ function slider() {
             <img src={Image} alt='' className='w-[50px] xl:w-[60px] min-[1350px]:w-[70px] 2xl:w-[100px]'/>
         </div>
     </div>
-    <hr className='mx-24 me-32 xl:mx-[250px] 2xl:gap-10 items-center mt-6 xl:mt-10 2xl:me-50 2xl:mt-10 min-[1750px]:me-[500px] mb-4'/>
+    <hr className='mx-24 me-32 xl:mx-[250px] 2xl:gap-10 items-center mt-6 xl:mt-10 2xl:me-50 2xl:mt-10 min-[1750px]:me-[500px] mb-4 max-md:mx-0'/>
     </div>
   )
 }
