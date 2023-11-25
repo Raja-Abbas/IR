@@ -1,5 +1,7 @@
 import { useState } from "react";
 import LogoOne from "../images/R logo.svg"
+import Getstarted from '../common/Getstarted'
+import Login from '../common/Login'
 
 
 export default function Header() {
@@ -56,6 +58,8 @@ export default function Header() {
               <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/contact">Contact</a>
               </li>
+              <li className="my-8"><a href="/login"><Login/></a></li>
+              <li className="my-8"><a href="/getstarted"><Getstarted/></a></li>
             </ul>
           </div>
         </section>
