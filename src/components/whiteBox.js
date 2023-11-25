@@ -6,7 +6,7 @@ function whiteBox() {
     <div className="box rectangle">
         <div className="labelthree flex gap-0">
 <p className="text-wrapperthree">Welcome to the future of Public Relations:</p>
-<div><img src={Comment} alt='' className='mt-0 w-36 -ml-14'/></div>
+<div><img src={Comment} alt='' className='mt-0 w-36 -ml-14 max-md:ml-0'/></div>
 </div>
 <div className='flex justify-end gap-[1%] mt-10 max-lg:flex-col'>
   <div className='flex flex-col gap-[1%]'>
