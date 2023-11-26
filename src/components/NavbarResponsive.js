@@ -17,7 +17,7 @@ export default function Header() {
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2 cursor-pointer"
+            className="HAMBURGER-ICON space-y-2 cursor-pointer max-md:me-4"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
