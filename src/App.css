@@ -6,6 +6,7 @@ body{
     background: #4E3FFB;  
 }
 
+
 .App{
     background: #4E3FFB;
     width: 100%;
@@ -104,4 +105,10 @@ body{
     .labelthree .text-wrapperthree{
         font-size: 30px;
     }
+}
+
+
+
+.progress-bar-wrapper{
+    width: 1500px;
 }

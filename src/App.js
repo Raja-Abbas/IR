@@ -1,27 +1,19 @@
 import './App.css';
-import Navbar from './components/navbar';
-import HeroSection from './components/HeroSection';
-import CenterText from './components/centerText';
-import Slider from './components/slider';
-import { Deploy } from './components/deploy';
-import WhiteBox from './components/whiteBox';
-import Footer from './components/footer/footer';
-import NavbarResponsive from './components/NavbarResponsive';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Main from './components/Main';
+import Signup from './components/signup';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <NavbarResponsive/>
-      <div className='max-w-[1600px] mx-auto'>
-      <HeroSection/>
-      <CenterText/>
-      <Slider/>
-      <Deploy/>
-      <WhiteBox/>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
       </div>
-      <Footer/>
-    </div>
+    </Router>
   );
 }
 
