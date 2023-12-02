@@ -39,9 +39,9 @@ function Signup() {
         <img src={Image} alt='' className="w-[150px]"/>
         <p className='text-white text-[30px] font-bold mt-8'>Intelligent<br/> Relations</p>
     </div>
-      <div className="bg-[#e9e9e9] w-[80%] mx-auto mt-10 lg:h-24 flex max-lg:flex-col max-lg:h-auto xl:justify-evenly max-lg:justify-center lg:justify-center">
+      <div className="bg-[#e9e9e9] w-[80%] mx-auto mt-10 lg:h-24 flex max-lg:flex-col max-lg:h-auto xl:justify-evenly max-lg:justify-center lg:justify-center max-lg:mx-auto max-lg:h-30">
         {steps.map((stepName, index) => (
-          <div key={index} className="flex items-center max-lg:border-b-2 max-lg:border-[grey]">
+          <div key={index} className="flex max-lg:justify-around items-center max-lg:border-b-2 max-lg:border-[grey]">
             <div
               className={`relative opacity-10 ${getStepColor(
                 index + 1
@@ -56,8 +56,8 @@ function Signup() {
             >
               {stepName}
             </div>
-            {index < steps.length - 1 && (
-              <img src={Arrow} alt="" className="ml-16" />
+            {index < steps.length && (
+              <img src={Arrow} alt="" className="ml-16"/>
             )}
           </div>
         ))}
