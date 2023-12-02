@@ -6,7 +6,7 @@ function Login() {
 
   const handleLoginClick = () => {
     // Navigate to the Signup page
-    navigate('/signup');
+    navigate('/onboarding');
   };
 
   return (
