@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Arrow from "../images/Vector 20.svg";
 import DragAndDrop from "./draganddrop";
+import Journalists from "./journalists";
 import Image from "../images/R logo.svg"
 import { ProgressBar } from "react-loader-spinner";
 
@@ -39,13 +40,13 @@ function Signup() {
         <img src={Image} alt='' className="w-[150px]"/>
         <p className='text-white text-[30px] font-bold mt-8'>Intelligent<br className="max-md:hidden"/> Relations</p>
     </div>
-      <div className="bg-[#e9e9e9] w-[80%] mx-auto mt-10 lg:h-24 flex max-lg:flex-col max-lg:h-auto xl:justify-evenly max-lg:justify-center lg:justify-center max-lg:mx-auto max-lg:h-30">
+      <div className="bg-[#f5f5f5] rounded-xl w-[80%] mx-auto mt-10 lg:h-24 flex max-lg:flex-col xl:justify-evenly max-lg:justify-center lg:justify-center max-lg:mx-auto max-lg:h-[30%]">
         {steps.map((stepName, index) => (
           <div key={index} className="flex max-lg:justify-around items-center max-lg:border-b-2 max-lg:border-[grey]">
             <div
               className={`relative opacity-10 ${getStepColor(
                 index + 1
-              )} text-6xl font-semibold font-Inter leading-[44px]`}
+              )} text-[400%] font-semibold font-Inter leading-[44px]`}
             >
               {index + 1}.
             </div>
@@ -64,7 +65,7 @@ function Signup() {
       </div>
 
       {loading && (
-        <div className="absolute top-80 ml-auto mr-auto left-0 right-0 overflow-hidden w-[300px] bg-white z-[10000] flex flex-col-reverse items-center justify-center bg-transparent">
+        <div className="absolute top-[60%] ml-auto mr-auto left-0 right-0 overflow-hidden w-[300px] bg-white z-[10000] flex flex-col-reverse h-[100px] items-center justify-center bg-transparent">
           <ProgressBar
             height="200"
             ariaLabel="progress-bar-loading"
@@ -82,46 +83,46 @@ function Signup() {
 
       {step === 1 && (
         <form>
-          <div className="bg-[#e9e9e9] w-[80%] mx-auto px-10 py-6">
+          <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-6">
             <div className="flex max-lg:flex-col max-lg:gap-2 lg:justify-around 2xl:justify-between">
               <input
                 placeholder="Company Name*"
-                className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] h-[55px] left-0 top-0 relative px-2 bg-neutral-100 rounded-[20px] text-neutral-800 text-lg font-normal font-Poppins leading-[14.70px]"
+                className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] h-[55px] left-0 top-0 relative px-2 bg-white rounded-[20px] text-neutral-800 text-lg font-normal font-Poppins leading-[14.70px]"
                 required
               />
-              <div className="relative">
-                <select className="max-lg:w-[100%] lg:w-[350px] xl:w-[530.85px] h-[55px] left-0 top-0 relative p-2.5 text-gray-500 bg-neutral-100 text-lg font-normal font-Poppins leading-[14.70px] border rounded-[20px] shadow-sm outline-none focus:border-indigo-600">
+              <div className="relative lg:w-[49%]">
+                <select className="max-lg:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%] h-[55px] left-0 top-0 relative px-2 bg-white rounded-[20px] text-neutral-400 text-lg font-normal font-Poppins leading-[14.70px]">
                   <option>Company Size</option>
-                  <option>Laravel 9 with React</option>
-                  <option>React with Tailwind CSS</option>
-                  <option>React With Headless UI</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
                 </select>
               </div>
             </div>
             <div className="flex max-lg:flex-col max-lg:gap-2 lg:justify-around mt-5 2xl:justify-between">
               <input
                 placeholder="URL*"
-                className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] h-[55px] left-0 top-0 relative px-2 bg-neutral-100 rounded-[20px] text-neutral-800 text-lg font-normal font-Poppins leading-[14.70px]"
+                className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] h-[55px] left-0 top-0 relative px-2 bg-white rounded-[20px] text-neutral-800 text-lg font-normal font-Poppins leading-[14.70px]"
                 required
               />
-              <div className="relative">
+              <div className="relative lg:w-[49%]">
                 <select
-                  className="max-lg:w-[100%] lg:w-[350px] xl:w-[530.85px] h-[55px] left-0 top-0 relative p-2.5 text-gray-500 bg-neutral-100 text-lg font-normal font-Poppins leading-[14.70px] border rounded-[20px] shadow-sm outline-none focus:border-indigo-600"
+                  className="max-lg:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%] h-[55px] left-0 top-0 relative px-2 bg-white rounded-[20px] text-neutral-400 text-lg font-normal font-Poppins leading-[14.70px]"
                   required
                 >
                   <option>Industry *</option>
-                  <option>Laravel 9 with React</option>
-                  <option>React with Tailwind CSS</option>
-                  <option>React With Headless UI</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
                 </select>
               </div>
             </div>
             <input
-              className="max-lg:w-[100%] max-lg:ml-0 lg:w-[100%] xl:w-[100%] h-[55px] bg-neutral-100 rounded-[20px] px-2 mt-5 min-[1500px]:ml-10 text-lg font-normal font-Poppins leading-[14.70px]"
+              className="max-lg:w-[100%] max-lg:ml-0 lg:w-[100%] xl:w-[100%] h-[55px] bg-white rounded-[20px] px-2 mt-5 text-lg font-normal font-Poppins leading-[14.70px]"
               placeholder="Competitor 1 URL"
             />
             <input
-              className="max-lg:w-[100%] max-lg:ml-0 lg:w-[100%] xl:w-[100%] h-[55px] bg-neutral-100 rounded-[20px] px-2 mt-5 text-lg font-normal font-Poppins leading-[14.70px]"
+              className="max-lg:w-[100%] max-lg:ml-0 lg:w-[100%] xl:w-[100%] h-[55px] bg-white rounded-[20px] px-2 mt-5 text-lg font-normal font-Poppins leading-[14.70px]"
               placeholder="Competitor 2 URL"
             />
           </div>
@@ -129,18 +130,20 @@ function Signup() {
       )}
 
       {step === 2 && (
-        <div className="bg-[#e9e9e9] w-[80%] mx-auto px-10 py-10">
+        <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10">
           <DragAndDrop />
         </div>
       )}
       {step === 3 && (
-        <div className="bg-[#e9e9e9] w-[80%] mx-auto px-10 py-10"></div>
+        <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10">
+          <Journalists />
+        </div>
       )}
       {step === 4 && (
-        <div className="bg-[#e9e9e9] w-[80%] mx-auto px-10 py-10"></div>
+        <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"></div>
       )}
       {step === 5 && (
-        <div className="bg-[#e9e9e9] w-[80%] mx-auto px-10 py-10"></div>
+        <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"></div>
       )}
 
       <div className="mx-auto bg-[#7DF4DC] -mt-4 w-[80%] text-center cursor-pointer hover:bg-black transition-all">
