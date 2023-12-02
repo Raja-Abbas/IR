@@ -70,7 +70,7 @@ const handleCancel = (boxIndex, itemIndex) => {
   };
 
   return (
-    <div className='flex max-lg:flex-col max-lg:g lg:justify-center lg:gap-2 xl:justify-around'>
+    <div className='flex max-lg:flex-col max-lg:gap-4 lg:justify-center lg:gap-2 xl:justify-around'>
       <div>
         <div className="lg:w-[100%] lg:ml-auto xl:w-[100%] opacity-60 text-neutral-900 text-[20px] font-normal font-Poppins leading-relaxed">
           Enter a list of company’s hashtags. We will use those hashtags (keywords) to search 24/7 for relevant journalists for your business, based on every new relevant article streaming in the news. Bellow a list of suggested keywords relevant to [company name]
