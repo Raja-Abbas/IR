@@ -124,8 +124,8 @@ function journalists() {
             <div className="w-5 h-5 bg-white bg-opacity-0 rounded-[3px]"></div>
           </div>
         </div>
-        <div className=" justify-start items-start gap-6 inline-flex">
-          <div className="w-[94px] h-[94px]">
+        <div className="max-lg:flex-col items-start gap-6 inline-flex">
+          <div className="w-[94px] h-[94px] max-lg:mx-auto">
             <img
               className="w-[94px] h-[94px] rounded-full"
               src={Image}
@@ -225,8 +225,8 @@ function journalists() {
             <div className="w-5 h-5 bg-white bg-opacity-0 rounded-[3px]"></div>
           </div>
         </div>
-        <div className=" justify-start items-start gap-6 inline-flex">
-          <div className="w-[94px] h-[94px]">
+        <div className="max-lg:flex-col items-start gap-6 inline-flex">
+          <div className="w-[94px] h-[94px] max-lg:mx-auto">
             <img
               className="w-[94px] h-[94px] rounded-full"
               src={Image}
