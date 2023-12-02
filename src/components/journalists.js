@@ -23,15 +23,15 @@ function journalists() {
             <div className="w-5 h-5 bg-white bg-opacity-0 rounded-[3px]"></div>
           </div>
         </div>
-        <div className=" justify-start items-start gap-6 inline-flex">
-          <div className="w-[94px] h-[94px]">
+        <div className="max-lg:flex-col items-start gap-6 inline-flex">
+          <div className="w-[94px] h-[94px] max-lg:mx-auto">
             <img
               className="w-[94px] h-[94px] rounded-full"
               src={Image}
               alt=""
             />
           </div>
-          <div className="flex-col justify-start items-start gap-[11px] inline-flex">
+          <div className="flex-col max-lg:justify-center lg:justify-start items-start gap-[11px] inline-flex">
             <div className="text-neutral-900 text-[22px] font-semibold font-Inter leading-snug">
               Devin Coldeway
             </div>
