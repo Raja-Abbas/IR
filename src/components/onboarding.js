@@ -35,9 +35,9 @@ function Signup() {
 
   return (
     <div className="flex flex-col gap-4 justify-center relative">
-       <div className='flex gap-2 items-center justify-center mt-16'>
+       <div className='flex max-md:flex-col gap-2 items-center justify-center mt-16'>
         <img src={Image} alt='' className="w-[150px]"/>
-        <p className='text-white text-[30px] font-bold mt-8'>Intelligent<br/> Relations</p>
+        <p className='text-white text-[30px] font-bold mt-8'>Intelligent<br className="max-md:hidden"/> Relations</p>
     </div>
       <div className="bg-[#e9e9e9] w-[80%] mx-auto mt-10 lg:h-24 flex max-lg:flex-col max-lg:h-auto xl:justify-evenly max-lg:justify-center lg:justify-center max-lg:mx-auto max-lg:h-30">
         {steps.map((stepName, index) => (
