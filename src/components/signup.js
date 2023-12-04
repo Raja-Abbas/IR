@@ -23,8 +23,8 @@ function signup() {
           className="bg-white px-6 cursor-pointer hover:bg-[grey] rounded-[100px]"
         />
       </div>
-      <div className="box rectangle flex gap-[10%] w-[50%]">
-        <div className="flex flex-col gap-2 justify-start w-[50%]">
+      <div className="box rectangle flex gap-[10%] w-[50%] max-lg:flex-col">
+        <div className="flex flex-col lg:gap-2 justify-start lg:w-[50%] max-lg:px-6">
           <p className="text-neutral-900 text-[45px] font-medium font-Poppins leading-[63px]">
             Get started, Get noticed
           </p>
@@ -32,7 +32,7 @@ function signup() {
             Try our full PR platform, <br className="max-lg:hidden" />
             start pitching within 90 seconds
           </p>
-          <div className="w-[100%] flex flex-col gap-2 opacity-60 text-neutral-900 text-base font-normal font-Poppins leading-relaxed">
+          <div className="w-[100%] flex flex-col gap-2 opacity-60 text-neutral-900 text-base font-normal font-Poppins leading-relaxed max-lg:mb-6">
             <li>
             Create your PR campaign and reach relevant publications and
             journalists
