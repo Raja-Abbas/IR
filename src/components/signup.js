@@ -7,7 +7,6 @@ import Footer from "./footer/footer";
 import Linkedin from "../images/image 6.svg"
 import Google from "../images/google.svg"
 import { useNavigate } from 'react-router-dom';
-import BackImage from "../images/Vector.svg"
 
 
 function signup() {
@@ -40,7 +39,6 @@ function signup() {
   };
   return (
     <div className="relative">
-         <img src={BackImage} alt=""className="absolute bottom-0 z-[100] lg:w-[900px] left-0"/>
       <Navbar />
       <NavbarResponsive />
       <div className="py-10 px-24 flex justify-between">
@@ -53,7 +51,7 @@ function signup() {
           className="bg-white px-6 cursor-pointer hover:bg-[grey] rounded-[100px]"
         />
       </div>
-      <div className="box rectangle flex gap-[10%] w-[50%] max-lg:flex-col">
+      <div className="box rectangle flex gap-[10%] w-[50%] max-lg:flex-col z-[20]">
         <div className="flex flex-col lg:gap-2 justify-start lg:w-[50%] max-lg:px-6">
           <p className="text-neutral-900 text-[45px] font-medium font-Poppins leading-[63px]">
             Get started, Get noticed
@@ -137,7 +135,7 @@ function signup() {
           </form>
         </div>
       </div>
-      <div className="z-[1000]">
+      <div className="z-[100000]">
       <Footer />
       </div>
     </div>
