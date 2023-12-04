@@ -12,7 +12,7 @@ export default function Header() {
     <div className="flex items-center justify-between max-lg:py-8 max-lg:px-8 max-md:py-2 max-md:px-2 lg:hidden">
       <div className='flex gap-2 items-center'>
         <img src={LogoOne} alt=''/>
-        <p className='text-white'>Intelligent<br/> Relations</p>
+        <p className='text-white font-bold'>Intelligent<br/> Relations</p>
     </div>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">

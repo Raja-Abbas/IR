@@ -4,8 +4,17 @@ import DragAndDrop from "./draganddrop";
 import Journalists from "./journalists";
 import Image from "../images/R logo.svg"
 import { ProgressBar } from "react-loader-spinner";
+import { useNavigate } from "react-router-dom";
+import Talkingpoints from "./talkingpoints";
+
 
 function Signup() {
+    const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    // Navigate to the Signup page
+    navigate("/signup");
+  };
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
 
@@ -23,7 +32,7 @@ function Signup() {
     setTimeout(() => {
       setStep((prevStep) => prevStep + 1);
       setLoading(false);
-    }, 3000);
+    }, 1000);
   };
 
   const getStepColor = (stepNumber) => {
@@ -140,7 +149,9 @@ function Signup() {
         </div>
       )}
       {step === 4 && (
-        <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"></div>
+        <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10">
+          <Talkingpoints/>
+        </div>
       )}
       {step === 5 && (
         <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"></div>
@@ -156,7 +167,9 @@ function Signup() {
             Next
           </button>
         ) : (
-          <p className="w-[80%] mx-auto py-6 text-indigo-600 text-lg font-semibold font-Poppins uppercase leading-[14.70px]">
+          <p className="w-[80%] mx-auto py-6 text-indigo-600 text-lg font-semibold font-Poppins uppercase leading-[14.70px]"
+                  onClick={handleLoginClick}
+>
             Task Submitted
           </p>
         )}

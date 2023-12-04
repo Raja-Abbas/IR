@@ -8,7 +8,7 @@ function navbar() {
     <div className='flex justify-between mx-4 me-6 my-4 items-center max-lg:hidden'>
     <div className='flex gap-2 items-center'>
         <img src={Image} alt=''/>
-        <p className='text-white'>Intelligent<br/> Relations</p>
+        <p className='text-white font-bold'>Intelligent<br/> Relations</p>
     </div>
     <div className='flex gap-6 text-white items-center'>
         <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>About</p>

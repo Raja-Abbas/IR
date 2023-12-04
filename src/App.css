@@ -112,3 +112,8 @@ body{
 .progress-bar-wrapper{
     width: 1500px;
 }
+.bg{
+    background: url(./images/Ellipse\ 29.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
