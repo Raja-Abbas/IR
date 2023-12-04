@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./navbar";
 import NavbarResponsive from "./NavbarResponsive";
 import Icon from "../images/i.svg";
@@ -6,11 +6,41 @@ import ShareLink from 'react-linkedin-share-link'
 import Footer from "./footer/footer";
 import Linkedin from "../images/image 6.svg"
 import Google from "../images/google.svg"
+import { useNavigate } from 'react-router-dom';
+import BackImage from "../images/Vector.svg"
+
 
 function signup() {
-  
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const navigate = useNavigate();
+
+  // State to track input values
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: ''
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleLoginClick = () => {
+    // Check if all fields are filled
+    if (Object.values(formData).every(value => value.trim() !== '')) {
+      // Navigate to the Signup page
+      navigate('/onboarding');
+    } else {
+      // Display an error message or handle the case where not all fields are filled
+      alert('Please fill in all fields.');
+    }
+  };
   return (
-    <div>
+    <div className="relative">
+         <img src={BackImage} alt=""className="absolute bottom-0 z-[100] lg:w-[900px] left-0"/>
       <Navbar />
       <NavbarResponsive />
       <div className="py-10 px-24 flex justify-between">
@@ -50,21 +80,37 @@ function signup() {
           <div className="w-full h-[590px] bg-neutral-100 rounded-[20px] px-3 py-8 shadow-lg flex flex-col items-center gap-3">
             <input
               className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="First Name" required
+              placeholder="First Name" 
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleInputChange}
+              required
             />
             <input
               className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="Last Name" required
+              placeholder="Last Name"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleInputChange}
+              required
             />
 
             <input
               className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="Email" required
+              placeholder="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              required
             />
 
             <input
               className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="Password" required
+              placeholder="Password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              required
             />
 
             <div className="w-[289px] mx-auto opacity-60 text-neutral-900 text-[11.5px] font-normal font-Poppins leading-[20px]">Yes, I’d like to receive helpful resources like tutorials, templates and the latest PR advice, as well as invitations to IR events. (You can opt out any time.) View our privacy policy</div>
@@ -81,14 +127,19 @@ function signup() {
   <div className="text-neutral-800 text-[18px] font-normal font-Poppins">Start Using Google</div>
 </div>
 <div className="w-[100%] h-[52px] bg-teal-200 rounded-[10px] flex justify-center items-center cursor-pointer hover:bg-black transition-all">
-  <div className="w-[100%] text-center text-indigo-600 text-[16px] font-semibold font-Poppins uppercase leading-[14.70px] ">Start</div>
+  <div className="w-[100%] text-center text-indigo-600 text-[16px] font-semibold font-Poppins uppercase leading-[14.70px] 
+  "
+  onClick={handleLoginClick}
+  >Start</div>
 </div>
 <div className="w-[100%] opacity-30 text-center text-neutral-900 text-[12px] font-normal font-Poppins leading-none">By signing up, you agree to our terms of use<br/></div>
           </div>
           </form>
         </div>
       </div>
+      <div className="z-[1000]">
       <Footer />
+      </div>
     </div>
   );
 }

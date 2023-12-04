@@ -6,7 +6,7 @@ function Getstarted() {
 
   const handleLoginClick = () => {
     // Navigate to the Signup page
-    navigate("/onboarding");
+    navigate("/signup");
   };
   return (
     <div>

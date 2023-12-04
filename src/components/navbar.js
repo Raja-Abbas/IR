@@ -2,11 +2,22 @@ import React from 'react'
 import Image from "../images/R logo.svg"
 import Getstarted from '../common/Getstarted'
 import Login from '../common/Login'
+import { useNavigate } from "react-router-dom";
+
 
 function navbar() {
+   // eslint-disable-next-line react-hooks/rules-of-hooks
+   const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    // Navigate to the Signup page
+    navigate('/');
+  };
+
   return (
     <div className='flex justify-between mx-4 me-6 my-4 items-center max-lg:hidden'>
-    <div className='flex gap-2 items-center'>
+    <div className='flex gap-2 items-center cursor-pointer'
+    onClick={handleLoginClick}>
         <img src={Image} alt=''/>
         <p className='text-white font-bold'>Intelligent<br/> Relations</p>
     </div>
