@@ -71,7 +71,9 @@ function TalkingPoints() {
         </div>
       </div>
       <div
-        className="lg:w-[400px] xl:w-[577px] 2xl:w-[650px] h-[444px] max-md:h-[222px] opacity-50 bg-neutral-100 rounded-lg border-2 border-stone-300 flex flex-col justify-center items-center gap-5 px-5"
+        className={`lg:w-[400px] xl:w-[577px] 2xl:w-[650px] h-[444px] max-md:h-[222px] opacity-50 bg-neutral-100 rounded-lg border-2 border-stone-300 flex flex-col justify-center items-center gap-5 px-5
+        ${isInspirationClicked ? 'w-full' : 'w-[100%]'}
+        `}
         onDragOver={handleDragOver}
         onDrop={handleDrop}
       >
