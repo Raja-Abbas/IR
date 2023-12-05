@@ -110,14 +110,14 @@ function signup() {
                 required
               />
 
-              <div className="w-[289px] mx-auto opacity-60 text-neutral-900 text-[11.5px] font-normal font-Poppins leading-[20px]">
+              <div className="w-[289px] max-md:w-[100%] mx-auto opacity-60 text-neutral-900 text-[11.5px] font-normal font-Poppins leading-[20px]">
                 Yes, I’d like to receive helpful resources like tutorials,
                 templates and the latest PR advice, as well as invitations to IR
                 events. (You can opt out any time.) View our privacy policy
               </div>
               <ShareLink link="https://www.linkedin.com/home">
                 {(link) => (
-                  <div className="flex justify-center gap-2 w-[289px] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all">
+                  <div className="flex justify-center gap-2 w-[100%] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all">
                     <img src={Linkedin} alt="" />
                     <a
                       href={link}
@@ -129,7 +129,7 @@ function signup() {
                   </div>
                 )}
               </ShareLink>
-              <div className="flex justify-center gap-2 w-[289px] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all cursor-pointer">
+              <div className="flex justify-center gap-2 w-[100%] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all cursor-pointer">
                 <img src={Google} alt="" />
                 <div className="text-neutral-800 text-[18px] font-normal font-Poppins">
                   Start Using Google
