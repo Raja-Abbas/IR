@@ -147,21 +147,26 @@ function Signup() {
         </div>
 
         {loading && (
-          <div className="absolute top-[55%] ml-auto mr-auto left-0 right-0 overflow-hidden w-[80%] h-[300px] bg-white z-[10000] flex flex-col-reverse items-center justify-center bg-transparent">
-            <ProgressBar
-              height="200"
-              ariaLabel="progress-bar-loading"
-              wrapperStyle={{}}
-              wrapperClass="progress-bar-wrapper"
-              borderColor=""
-              barColor="#51E5FF"
-            />
+  <div className="absolute top-[55%] ml-auto mr-auto left-0 right-0 overflow-hidden w-[80%] h-[300px] bg-white z-[10000] flex flex-col-reverse items-center justify-center bg-transparent">
+    <ProgressBar
+      height="100"
+      ariaLabel="progress-bar-loading"
+      wrapperStyle={{}}
+      wrapperClass="progress-bar-wrapper"
+      borderColor=""
+      barColor="#51E5FF"
+    />
 
-            <p className="opacity-30 text-center text-neutral-900 text-[22px] font-semibold font-Poppins leading-loose">
-              Firing up the AI.....
-            </p>
-          </div>
-        )}
+    <p className="opacity-30 text-center text-neutral-900 text-[22px] font-semibold font-Poppins leading-loose">
+      {step === 1 && "Firing Up the AI..."}
+      {step === 2 && "Analyzing keywords..."}
+      {step === 3 && "Finding relevant journalists..."}
+      {step === 4 && "Creating talking points..."}
+      {step === 5 && "Processing payment details..."}
+    </p>
+  </div>
+)}
+
         {step === 1 && (
           <form data-step="1">
             <div className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-6 zindex">
@@ -254,7 +259,7 @@ function Signup() {
         )}
         {step === 4 && (
           <div
-            className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"
+            className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto max-md:px-2 md:px-10 py-10"
             data-step="4"
           >
             <Talkingpoints />
@@ -262,7 +267,7 @@ function Signup() {
         )}
         {step === 5 && (
           <div
-            className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"
+            className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto max-md:px-2 md:px-10 py-10"
             data-step="5"
           >
             <div className="px-14 max-md:px-4">
@@ -359,13 +364,13 @@ function Signup() {
             <button
               type="button"
               onClick={handleNextStep}
-              className="w-[80%] mx-auto py-6 text-indigo-600 text-lg font-semibold font-Poppins uppercase leading-[14.70px]"
+              className="w-[80%] mx-auto py-6 text-indigo-600 text-lg font-semibold font-Poppins uppercase leading-[14.70px] transition-all"
             >
               Next
             </button>
           ) : (
             <p
-              className="w-[80%] mx-auto py-6 text-indigo-600 text-lg font-semibold font-Poppins uppercase leading-[14.70px]"
+              className="w-[80%] mx-auto py-6 text-indigo-600 text-lg font-semibold font-Poppins uppercase leading-[14.70px] transition-all"
               onClick={handleLoginClick}           
             >
               Task Submitted

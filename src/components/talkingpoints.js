@@ -28,7 +28,7 @@ function TalkingPoints() {
 
   return (
     <div className={`max-lg:flex-col flex gap-5 w-[100%] 2xl:flex ${isInspirationClicked ? 'lg:flex-col' : '2xl:justify-center'}`}>
-      <div className="w-[50%]">
+      <div className="max-md:w-[100%] md:w-[50%]">
         <div
           className="w-[100%] opacity-60 text-neutral-900 text-[140%] font-normal font-Poppins leading-normal"
           onDragOver={handleDragOver}
@@ -43,7 +43,7 @@ function TalkingPoints() {
             [1, 2, 3].map((number) => (
               <div
                 key={number}
-                className="w-[100%] h-[55px] bg-neutral-200 rounded-[20px] flex justify-start px-5 items-center mt-6"
+                className="w-[100%] max-md:h-auto md:h-[55px] bg-neutral-200 rounded-[20px] flex justify-start px-5 items-center mt-6"
                 draggable
                 onDragStart={(e) => {
                   const text = `What most people don’t understand... ${number}`;
