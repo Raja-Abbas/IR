@@ -40,7 +40,7 @@ function signup() {
     <div className="relative">
       <Navbar />
       <NavbarResponsive />
-      <div className="py-10 px-24 flex justify-between">
+      <div className="py-10 max-md:px-2 md:px-24 flex justify-between">
         <div class="w-[546.98px] text-white text-[45px] font-bold font-Poppins leading-[63px]">
           Sign Up
         </div>
