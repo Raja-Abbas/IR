@@ -111,12 +111,13 @@ function Signup() {
       <NavbarResponsive/>
       </div>
       <div className="flex flex-col gap-4 justify-center mb-20">
-        <div className="flex max-md:flex-col gap-2 items-center justify-center">
+        <div className="relative flex max-md:flex-col gap-2 items-center justify-center">
           <img src={Image} alt="" className="w-[150px]" />
           <p className="text-white text-[30px] font-bold mt-8">
             Intelligent
             <br className="max-md:hidden" /> Relations
           </p>
+          <div className="max-md:hidden hover:underline cursor-pointer absolute right-10 text-white text-[16px] font-normal font-Poppins leading-[14.70px]">Questions? (833) 317-6278</div>
         </div>
         <div className="bg-[#f5f5f5] rounded-xl w-[80%] mx-auto mt-10 lg:h-24 flex max-lg:flex-col xl:justify-evenly max-lg:justify-center lg:justify-center max-lg:mx-auto max-lg:h-[30%] z-[1000]">
           {steps.map((stepName, index) => (
