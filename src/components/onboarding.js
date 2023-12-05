@@ -265,12 +265,12 @@ function Signup() {
             className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"
             data-step="5"
           >
-            <div className="px-14">
+            <div className="px-14 max-md:px-4">
               <div className="text-neutral-900 text-[22px] font-bold font-Poppins leading-[25.20px]">
                 Select your Plan:
               </div>
-              <div className="w-[100%] h-[150px] bg-neutral-200 rounded-[20px] px-3 py-3 mt-5 flex flex-col gap-4">
-                <div className="w-[100%] h-[55px] bg-white rounded-[20px] flex gap-6 items-center px-6">
+              <div className="w-[100%] max-md:h-auto bg-neutral-200 rounded-[20px] px-3 py-3 mt-5 flex flex-col gap-4">
+                <div className="w-[100%] py-3 bg-white rounded-[20px] flex gap-6 items-center px-6">
                   <input
                     type="radio"
                     className="w-5 h-5"
@@ -301,9 +301,9 @@ function Signup() {
                 Enter CC info to start getting press
               </div>
               <div className="w-[100%] mb-4">
-                <div className="w-[100%] flex justify-between items-center mt-4 gap-4">
+                <div className="w-[100%] flex max-md:flex-col justify-between items-center mt-4 gap-4">
                   <input
-                    className="w-[50%] h-[55px] bg-neutral-200 rounded-[20px] flex items-center px-5 text-neutral-800 text-sm font-normal font-Poppins leading-[14.70px]"
+                    className="w-[50%] max-md:w-[100%] h-[55px] bg-neutral-200 rounded-[20px] flex items-center px-5 text-neutral-800 text-sm font-normal font-Poppins leading-[14.70px]"
                     placeholder="Company Name"
                     required
                     value={formData.companyName}
@@ -312,7 +312,7 @@ function Signup() {
                     }
                   />
                   <input
-                    className="w-[50%] h-[55px] bg-neutral-200 rounded-[20px] flex items-center px-5 text-neutral-800 text-sm font-normal font-Poppins leading-[14.70px]"
+                    className="w-[50%] max-md:w-[100%] h-[55px] bg-neutral-200 rounded-[20px] flex items-center px-5 text-neutral-800 text-sm font-normal font-Poppins leading-[14.70px]"
                     placeholder="Address"
                     required
                     value={formData.address}
@@ -321,9 +321,9 @@ function Signup() {
                     }
                   />
                 </div>
-                <div className="w-[100%] mt-4 flex justify-between items-center gap-4">
+                <div className="w-[100%] mt-4 flex max-md:flex-col justify-between items-center gap-4">
                   <input
-                    className="w-[50%] h-[55px] bg-neutral-200 rounded-[20px] flex items-center px-5 text-neutral-800 text-sm font-normal font-Poppins leading-[14.70px]"
+                    className="w-[50%] max-md:w-[100%] h-[55px] bg-neutral-200 rounded-[20px] flex items-center px-5 text-neutral-800 text-sm font-normal font-Poppins leading-[14.70px]"
                     placeholder="CC number"
                     required
                     value={formData.ccnumber}
@@ -331,7 +331,7 @@ function Signup() {
                       handleInputChange("ccnumber", e.target.value)
                     }
                   />
-                  <div className="flex gap-4 w-[50%]">
+                  <div className="flex max-md:flex-col gap-4 w-[50%] max-md:w-[100%]">
                     <input
                       className="w-[100%] h-[55px] bg-neutral-200 rounded-[20px] flex items-center px-5 text-neutral-800 text-sm font-normal font-Poppins leading-[14.70px]"
                       placeholder="EXP"
