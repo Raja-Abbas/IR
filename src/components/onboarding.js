@@ -14,7 +14,7 @@ function Signup() {
 
   const handleLoginClick = () => {
     // Navigate to the Signup page
-    navigate("/signup");
+    navigate("/");
   };
 
   const [step, setStep] = useState(1);
