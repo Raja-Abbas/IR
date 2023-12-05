@@ -75,7 +75,7 @@ const handleCancel = (boxIndex, itemIndex) => {
         <div className="lg:w-[100%] lg:ml-auto xl:w-[100%] opacity-60 text-neutral-900 text-[20px] font-normal font-Poppins leading-relaxed">
           Enter a list of company’s hashtags. We will use those hashtags (keywords) to search 24/7 for relevant journalists for your business, based on every new relevant article streaming in the news. Bellow a list of suggested keywords relevant to [company name]
         </div>
-        <div className="mt-10 text-neutral-900 text-[16px] font-medium font-Poppins uppercase leading-[10.50px]">Drag and drop In order or importance</div>
+        <div className="mt-10 text-neutral-900 text-[16px] font-medium font-Poppins uppercase">Drag and drop In order or importance</div>
         <div
           className='lg:w-[100%] lg:ml-auto xl:w-[100%] mt-10 flex justify-start flex-wrap gap-1'
         >
