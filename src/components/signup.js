@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import Navbar from "./navbar";
 import NavbarResponsive from "./NavbarResponsive";
 import Icon from "../images/i.svg";
-import ShareLink from 'react-linkedin-share-link'
+import ShareLink from "react-linkedin-share-link";
 import Footer from "./footer/footer";
-import Linkedin from "../images/image 6.svg"
-import Google from "../images/google.svg"
-import { useNavigate } from 'react-router-dom';
-
+import Linkedin from "../images/image 6.svg";
+import Google from "../images/google.svg";
+import { useNavigate } from "react-router-dom";
 
 function signup() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -16,10 +15,10 @@ function signup() {
   // State to track input values
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: ''
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
   });
 
   const handleInputChange = (e) => {
@@ -29,12 +28,12 @@ function signup() {
 
   const handleLoginClick = () => {
     // Check if all fields are filled
-    if (Object.values(formData).every(value => value.trim() !== '')) {
+    if (Object.values(formData).every((value) => value.trim() !== "")) {
       // Navigate to the Signup page
-      navigate('/onboarding');
+      navigate("/onboarding");
     } else {
       // Display an error message or handle the case where not all fields are filled
-      alert('Please fill in all fields.');
+      alert("Please fill in all fields.");
     }
   };
   return (
@@ -62,81 +61,99 @@ function signup() {
           </p>
           <div className="w-[100%] flex flex-col gap-2 opacity-60 text-neutral-900 text-base font-normal font-Poppins leading-relaxed max-lg:mb-6">
             <li>
-            Create your PR campaign and reach relevant publications and
-            journalists
+              Create your PR campaign and reach relevant publications and
+              journalists
             </li>
-            <li>
-            Get your company news and talking points to the press
-            </li>
-            <li>
-            Schedule interviews and follow up with journalists
-            </li>
+            <li>Get your company news and talking points to the press</li>
+            <li>Schedule interviews and follow up with journalists</li>
           </div>
         </div>
         <div>
           <form action="">
-          <div className="w-full h-[590px] bg-neutral-100 rounded-[20px] px-3 py-8 shadow-lg flex flex-col items-center gap-3">
-            <input
-              className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="First Name" 
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleInputChange}
-              required
-            />
-            <input
-              className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="Last Name"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleInputChange}
-              required
-            />
+            <div className="w-full h-[590px] bg-neutral-100 rounded-[20px] px-3 py-8 shadow-lg flex flex-col items-center gap-3">
+              <input
+                className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
+                placeholder="First Name"
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
+                placeholder="Last Name"
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleInputChange}
+                required
+              />
 
-            <input
-              className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="Email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-            />
+              <input
+                className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
+                placeholder="Email"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
 
-            <input
-              className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
-              placeholder="Password"
-              name="password"
-              value={formData.password}
-              onChange={handleInputChange}
-              required
-            />
+              <input
+                className="w-[100%] h-[55px] bg-white rounded-[20px] text-neutral-800 px-8 font-Poppins"
+                placeholder="Password"
+                name="password"
+                type="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                required
+              />
 
-            <div className="w-[289px] mx-auto opacity-60 text-neutral-900 text-[11.5px] font-normal font-Poppins leading-[20px]">Yes, I’d like to receive helpful resources like tutorials, templates and the latest PR advice, as well as invitations to IR events. (You can opt out any time.) View our privacy policy</div>
-             <ShareLink link='https://www.linkedin.com/home'>
-   {link => (
-      <div className="flex justify-center gap-2 w-[289px] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all">
-      <img src={Linkedin} alt=""/>
-      <a href={link} target='_blank' className="text-neutral-800 text-[16px] font-normal font-Poppins">Share this on Linkedin</a>
-      </div>
-   )}
-</ShareLink>
-<div className="flex justify-center gap-2 w-[289px] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all cursor-pointer">
-  <img src={Google} alt=""/>
-  <div className="text-neutral-800 text-[18px] font-normal font-Poppins">Start Using Google</div>
-</div>
-<div className="w-[100%] h-[52px] bg-teal-200 rounded-[10px] flex justify-center items-center cursor-pointer hover:bg-black transition-all">
-  <div className="w-[100%] text-center text-indigo-600 text-[16px] font-semibold font-Poppins uppercase leading-[14.70px] 
+              <div className="w-[289px] mx-auto opacity-60 text-neutral-900 text-[11.5px] font-normal font-Poppins leading-[20px]">
+                Yes, I’d like to receive helpful resources like tutorials,
+                templates and the latest PR advice, as well as invitations to IR
+                events. (You can opt out any time.) View our privacy policy
+              </div>
+              <ShareLink link="https://www.linkedin.com/home">
+                {(link) => (
+                  <div className="flex justify-center gap-2 w-[289px] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all">
+                    <img src={Linkedin} alt="" />
+                    <a
+                      href={link}
+                      target="_blank"
+                      className="text-neutral-800 text-[16px] font-normal font-Poppins"
+                    >
+                      Share this on Linkedin
+                    </a>
+                  </div>
+                )}
+              </ShareLink>
+              <div className="flex justify-center gap-2 w-[289px] h-[55px] bg-white rounded-[10px] shadow items-center hover:bg-neutral-300 transition-all cursor-pointer">
+                <img src={Google} alt="" />
+                <div className="text-neutral-800 text-[18px] font-normal font-Poppins">
+                  Start Using Google
+                </div>
+              </div>
+              <div className="w-[100%] h-[52px] bg-teal-200 rounded-[10px] flex justify-center items-center cursor-pointer hover:bg-black transition-all">
+                <div
+                  className="w-[100%] text-center text-indigo-600 text-[16px] font-semibold font-Poppins uppercase leading-[14.70px] 
   "
-  onClick={handleLoginClick}
-  >Start</div>
-</div>
-<div className="w-[100%] opacity-30 text-center text-neutral-900 text-[12px] font-normal font-Poppins leading-none">By signing up, you agree to our terms of use<br/></div>
-          </div>
+                  onClick={handleLoginClick}
+                >
+                  Start
+                </div>
+              </div>
+              <div className="w-[100%] opacity-30 text-center text-neutral-900 text-[12px] font-normal font-Poppins leading-none">
+                By signing up, you agree to our terms of use
+                <br />
+              </div>
+            </div>
           </form>
         </div>
       </div>
       <div className="z-[100000]">
-      <Footer />
+        <Footer />
       </div>
     </div>
   );

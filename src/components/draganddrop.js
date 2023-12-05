@@ -97,7 +97,7 @@ const handleCancel = (boxIndex, itemIndex) => {
             key={boxIndex}
             onDragOver={handleDragOver}
             onDrop={() => handleDrop(boxIndex)}
-            className="lg:w-[350px] xl:w-[500px] min-[1100px]:w-[400px] 2xl:w-[600px] h-[74px] bg-neutral-300 rounded-[20px] flex justify-around items-center"
+            className="lg:w-[350px] xl:w-[500px] min-[1100px]:w-[400px] 2xl:w-[600px] h-[74px] bg-neutral-300 rounded-[20px] flex justify-start gap-5 px-4 items-center"
           >
             {droppedItems
               .filter((item) => item.boxIndex === boxIndex)

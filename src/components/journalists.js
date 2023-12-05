@@ -19,9 +19,7 @@ function journalists() {
       <div className="lg:h-[300px] overflow-y-scroll scrollbar-hide cursor-pointer">
       <div className="mt-10 w-full h-[158px] relative bg-white rounded-lg flex max-lg:flex-col max-lg:h-auto max-lg:py-2 max-lg:gap-4 justify-around items-center">
         <div className="w-5 h-5">
-          <div className="w-5 h-5 rounded-[3px] border border-neutral-400">
-            <div className="w-5 h-5 bg-white bg-opacity-0 rounded-[3px]"></div>
-          </div>
+          <input type="checkbox" className="w-5 h-5 accent-emerald-500/25"/>
         </div>
         <div className="max-lg:flex-col items-start gap-6 inline-flex">
           <div className="w-[94px] h-[94px] max-lg:mx-auto">
@@ -119,10 +117,8 @@ function journalists() {
         </div>
       </div>
       <div className="mt-10 w-full h-[158px] relative bg-white rounded-lg flex max-lg:flex-col max-lg:h-auto max-lg:py-2 max-lg:gap-4 justify-around items-center">
-        <div className="w-5 h-5">
-          <div className="w-5 h-5 rounded-[3px] border border-neutral-400">
-            <div className="w-5 h-5 bg-white bg-opacity-0 rounded-[3px]"></div>
-          </div>
+       <div className="w-5 h-5">
+          <input type="checkbox" className="w-5 h-5 accent-emerald-500/25"/>
         </div>
         <div className="max-lg:flex-col items-start gap-6 inline-flex">
           <div className="w-[94px] h-[94px] max-lg:mx-auto">
@@ -221,9 +217,7 @@ function journalists() {
       </div>
       <div className="mt-10 w-full h-[158px] relative bg-white rounded-lg flex max-lg:flex-col max-lg:h-auto max-lg:py-2 max-lg:gap-4 justify-around items-center">
         <div className="w-5 h-5">
-          <div className="w-5 h-5 rounded-[3px] border border-neutral-400">
-            <div className="w-5 h-5 bg-white bg-opacity-0 rounded-[3px]"></div>
-          </div>
+          <input type="checkbox" className="w-5 h-5 accent-emerald-500/25"/>
         </div>
         <div className="max-lg:flex-col items-start gap-6 inline-flex">
           <div className="w-[94px] h-[94px] max-lg:mx-auto">
