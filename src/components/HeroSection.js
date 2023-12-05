@@ -1,8 +1,21 @@
 import React from "react";
 import ImagePlay from "../images/play-circle.svg";
 import DoubleTick from "../images/doubletick.svg";
+import { useNavigate } from "react-router-dom";
+
 
 function HeroSection() {
+     // eslint-disable-next-line react-hooks/rules-of-hooks
+   const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    // Navigate to the Signup page
+    navigate('/signup');
+  };
+  const handleSignupClick = () => {
+    // Navigate to the Signup page
+    navigate('/onboarding');
+  };
   return (
     <div className="flex justify-between mx-24 xl:mx-[250px] 2xl:justify-center 2xl:gap-80 items-center mt-16 xl:mt-24 2xl:mt-36 max-lg:flex-col max-lg:gap-10 max-md:mx-2">
       <div className="flex flex-col gap-2 text-white max-lg:ml-10">
@@ -15,11 +28,13 @@ function HeroSection() {
           <p className="px-6 py-3 pt-5">
             An AI-Powered DIY PR Portal for your marketing team
           </p>
-          <p className="text-center mt-4 py-2 bg-[#7DF4DC] rounded-btn hover:bg-white hover:text-[#7DF4DC] cursor-pointer transition-all">
+          <p className="text-center mt-4 py-2 bg-[#7DF4DC] rounded-btn hover:bg-white hover:text-[#7DF4DC] cursor-pointer transition-all"
+          onClick={handleLoginClick}>
             START NOW
           </p>
         </div>
-        <div className="flex gap-6 max-w-[260px] items-center cursor-pointer justify-center mb-4 border border-[#7DF4DC] rounded-[10px] py-2 hover:bg-black transition-all">
+        <div className="flex gap-6 max-w-[260px] items-center cursor-pointer justify-center mb-4 border border-[#7DF4DC] rounded-[10px] py-2 hover:bg-black transition-all"
+        onClick={handleSignupClick}>
           <img src={ImagePlay} alt="" />
           <p className="text-white">See us in action</p>
         </div>
