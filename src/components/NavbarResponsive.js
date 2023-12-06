@@ -2,11 +2,20 @@ import { useState } from "react";
 import LogoOne from "../images/R logo.svg"
 import Getstarted from '../common/Getstarted'
 import Login from '../common/Login'
+import { useNavigate } from "react-router-dom";
+
 
 
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+   const navigateAbout = useNavigate();
+
+  const handleAboutClick = () => {
+    // Navigate to the Signup page
+    navigateAbout('/About');
+  };
 
   return (
     <div className="flex items-center justify-between max-lg:py-8 max-lg:px-8 max-md:py-2 max-md:px-2 lg:hidden zindex">
@@ -44,8 +53,9 @@ export default function Header() {
               </svg>
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase text-white">
-                <a href="/about">About</a>
+              <li className="border-b border-gray-400 my-8 uppercase text-white"
+              >
+                <a href="/about" onClick={handleAboutClick}>About</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/about">How We Work</a>
