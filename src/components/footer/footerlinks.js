@@ -1,6 +1,7 @@
 import React from "react";
 import RLogo from "../../images/r small footer.svg"
 
+
 function footerlinks() {
   return (
     <div className="min-[1750px]:me-[300px]">

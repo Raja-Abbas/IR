@@ -2,6 +2,7 @@ import React from 'react'
 import Getstarted from "../../common/Getstarted"
 import Footerlinks from './footerlinks'
 
+
 function footer() {
   return (
     <div className='flex flex-col justify-center bg-[#222222] z-[100]'>

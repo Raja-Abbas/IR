@@ -16,7 +16,12 @@ export default function Header() {
     // Navigate to the Signup page
     navigateAbout('/About');
   };
+const navigateBlog = useNavigate();
 
+  const handleBlogClick = () => {
+    // Navigate to the Signup page
+    navigateBlog('/Blog');
+  };
   return (
     <div className="flex items-center justify-between max-lg:py-8 max-lg:px-8 max-md:py-2 max-md:px-2 lg:hidden zindex">
       <div className='flex gap-2 items-center'>

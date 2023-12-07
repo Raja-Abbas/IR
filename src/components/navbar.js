@@ -21,6 +21,14 @@ function navbar() {
     // Navigate to the Signup page
     navigateAbout('/About');
   };
+  
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const navigateBlog = useNavigate();
+
+  const handleBlogClick = () => {
+    // Navigate to the Signup page
+    navigateBlog('/Blog');
+  };
   return (
     <div className='flex justify-between mx-4 me-6 my-4 items-center max-lg:hidden zindex'>
     <div className='flex gap-2 items-center cursor-pointer'
@@ -33,7 +41,7 @@ function navbar() {
         onClick={handleAboutClick}>About</p>
         <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>How We Work</p>
         <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>Pricing</p>
-        <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>Blog</p>
+        <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline' onClick={handleBlogClick}>Blog</p>
         <p className='text-[16px] font-[600] font-poppins cursor-pointer hover:underline'>Contact</p>
         <Login/>
        <Getstarted/>

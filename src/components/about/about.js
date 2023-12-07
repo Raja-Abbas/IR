@@ -13,8 +13,17 @@ import Image3 from "../../images/Stamatis-Headshot-2-copy-e1685722054332.webp.sv
 import Image4 from "../../images/Paula-10_web-copy.webp.svg"
 import Image5 from "../../images/Rudi-Davis-Headshot.svg"
 import Footer from "../../components/footer/footer"
+import { useNavigate } from "react-router-dom";
+
 
 function about() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const navigateHome = useNavigate();
+
+  const handleHomeClick = () => {
+    // Navigate to the Signup page
+    navigateHome('/');
+  };
   return (
     <div>
       <div className="bg-about relative">
@@ -33,7 +42,8 @@ function about() {
       </div>
       <div className="bg-white pt-[80px] pb-[80px]">
         <div className="flex gap-5 max-md:px-2 md:px-[184px]">
-          <div className="text-neutral-400 text-[15px] font-normal font-Inter leading-relaxed">
+          <div className="text-neutral-400 text-[15px] focus:underline hover:underline cursor-pointer font-normal font-Inter leading-relaxed"
+          onClick={handleHomeClick}>
             Home
           </div>
           <div className="text-neutral-400 text-[15px] font-normal font-Inter leading-relaxed">

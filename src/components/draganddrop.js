@@ -59,14 +59,12 @@ const [droppedItems, setDroppedItems] = useState([]);
           { item: draggedItem, boxIndex },
         ]);
 
-        // Remove the dropped item from the items array
         setItems((prevItems) => prevItems.filter((_, index) => index !== draggedItemIndex));
       } else {
         toast.error('Cannot add more than 4 items to a box!');
       }
     }
 
-    // Reset the draggedItemIndex in localStorage
     localStorage.removeItem('draggedItemIndex');
   };
 
@@ -82,12 +80,10 @@ const [droppedItems, setDroppedItems] = useState([]);
         )
       );
 
-      // Add the canceled item back to the items array
       setItems((prevItems) => [...prevItems, canceledItem.item]);
     }
   };
 
-  // Check if all boxes are filled
   const allBoxesFilled = [0, 1, 2, 3].every((boxIndex) =>
     droppedItems.some((item) => item.boxIndex === boxIndex)
   );
