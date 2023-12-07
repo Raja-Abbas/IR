@@ -24,13 +24,10 @@ function about() {
           <div className="text-white max-lg:px-10 text-[40px] font-bold font-Inter">
             About Intelligent Relations
           </div>
-          <div className="text-white max-lg:w-auto max-lg:px-10 lg:w-[345px] font-semibold min-[2200px]:w-[100%] text-[17px] font-Inter leading-relaxed mt-10">
+          <div className="text-white max-lg:w-auto max-lg:px-10 lg:w-[345px] font-semibold min-[2200px]:w-[100%] text-[17px] font-Inter leading-relaxed mt-10 max-lg:mb-10">
             We’re on a mission to democratize PR through technology, empowering
             leaders and brands to win valuable media coverage with the help of
             AI.
-          </div>
-          <div className="max-lg:mx-10 w-5 m:h-[40px] max-lg:hidden sm:overflow-hidden mt-14">
-            <img src={ArrowsDown} alt="" />
           </div>
         </div>
       </div>
