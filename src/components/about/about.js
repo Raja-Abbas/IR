@@ -12,6 +12,7 @@ import Image2 from "../../images/Steve.webp.svg"
 import Image3 from "../../images/Stamatis-Headshot-2-copy-e1685722054332.webp.svg"
 import Image4 from "../../images/Paula-10_web-copy.webp.svg"
 import Image5 from "../../images/Rudi-Davis-Headshot.svg"
+import Footer from "../../components/footer/footer"
 
 function about() {
   return (
@@ -38,7 +39,7 @@ function about() {
           <div className="text-neutral-400 text-[15px] font-normal font-Inter leading-relaxed">
             Home
           </div>
-          <div class="text-neutral-400 text-[15px] font-normal font-Inter leading-relaxed">
+          <div className="text-neutral-400 text-[15px] font-normal font-Inter leading-relaxed">
             /
           </div>
           <div className="text-indigo-600 text-[15px] font-normal font-Inter leading-relaxed">
@@ -155,14 +156,63 @@ function about() {
       </div>
       <div className="px-10 py-20 flex flex-col justify-center">
       <div className="text-center text-white text-[40px] font-bold font-Inter">Leadership</div>
-      <div className="grid lg:grid-cols-3 self-center gap-20 mt-28 px-14 py-14 dark-bg-dots ">
-        <img src={Image1} alt="" className="rounded-full cursor-pointer hover:opacity-60"/>
-        <img src={Image2} alt="" className="rounded-full cursor-pointer hover:opacity-60"/>
-        <img src={Image3} alt="" className="rounded-full cursor-pointer hover:opacity-60"/>
-        <img src={Image4} alt="" className="rounded-full cursor-pointer hover:opacity-60"/>
-        <img src={Image5} alt="" className="rounded-full cursor-pointer hover:opacity-60"/>
+      <div className="flex gap-20 mt-28 lg:w-[1000px] mx-auto flex-wrap justify-center max-lg:flex-col py-14 dark-bg-dots ">
+        <div className="flex flex-col gap-8 justify-center">
+        <img src={Image1} alt="" className="rounded-full cursor-pointer hover:opacity-60 w-[200px]"/>
+        <div className="flex flex-col gap-2">
+        <div className="text-center text-white text-2xl font-bold font-Inter">Rob Shavell</div>
+        <div className="text-center text-white text-[15px] font-normal font-Inter">Chairman</div>
+        </div>
+        </div>
+        <div className="flex flex-col gap-8 justify-center">
+        <img src={Image2} alt="" className="rounded-full cursor-pointer hover:opacity-60 w-[200px]"/>
+        <div className="flex flex-col gap-2">
+        <div className="text-center text-white text-2xl font-bold font-Inter">Steve Marcinuk</div>
+        <div className="text-center text-white text-[15px] font-normal font-Inter">Co-Founder & General Manager</div>
+        </div>
+        </div>
+        <div className="flex flex-col gap-8 justify-center">
+        <img src={Image3} alt="" className="rounded-full cursor-pointer hover:opacity-60 w-[200px]"/>
+        <div className="flex flex-col gap-2">
+        <div className="text-center text-white text-2xl font-bold font-Inter">Stamatis N. Astra</div>
+        <div className="text-center text-white text-[15px] font-normal font-Inter">Co-Founder & Business Officer</div>
+        </div>
+        </div>
+        <div className="flex flex-col gap-8 justify-center">
+        <img src={Image4} alt="" className="rounded-full cursor-pointer hover:opacity-60 w-[200px]"/>
+        <div className="flex flex-col gap-2">
+        <div className="text-center text-white text-2xl font-bold font-Inter">Paula Phelan</div>
+        <div className="text-center text-white text-[15px] font-normal font-Inter">Strategic Advisor</div>
+        </div>
+        </div>
+        <div className="flex flex-col gap-8 justify-center">
+        <img src={Image5} alt="" className="rounded-full cursor-pointer hover:opacity-60 w-[200px]"/>
+        <div className="flex flex-col gap-2">
+        <div className="text-center text-white text-2xl font-bold font-Inter">Rudi Davis</div>
+        <div className="text-center text-white text-[15px] font-normal font-Inter">Head of Agency</div>
+        </div>
+        </div>
       </div>
       </div>
+      <div className="bg-white pt-40 pb-20">
+      <div className="w-[80%] max-lg:h-auto max-lg:px-2 lg:h-[368px] mx-auto relative bg-white rounded-[25px] py-20 shadow-2xl">
+        <div className="flex flex-col gap-10">
+        <div className="text-center text-neutral-800 text-[42px] font-bold font-Inter leading-[50px]">Get Early Access – Book a Demo</div>
+        <div className="text-center text-neutral-800 text-[17px] font-normal font-Inter leading-relaxed">Get a personalized demo to see what Intelligent Relations can do for you.</div>
+        <div className="w-[176.09px] h-[52px] mx-auto mt-1 relative hover:bg-black cursor-pointer transition-all bg-indigo-600 rounded-[10px] flex justify-center items-center">
+    <div className="text-center text-white text-[17px] font-normal font-Inter">Book a Demo</div>
+</div>
+        </div>
+</div>
+<div className="text-center text-neutral-800 text-3xl font-bold font-Inter pt-40 max-md:px-4">Don’t miss updates from us!</div>
+<div className="flex max-md:flex-col max-md:gap-4 justify-center items-center mt-20">
+<input className="w-[340px] h-[52px] bg-neutral-200 rounded-[10px] px-5" placeholder="Enter your e-mail address*"/>
+<div className="w-40 h-[52px] relative bg-indigo-600 rounded-[10px] border hover:bg-black cursor-pointer transition-all md:-ml-4 border-indigo-600 flex justify-center items-center">
+    <div className="text-center text-teal-200 text-[17px] font-normal font-Inter">Subscribe</div>
+</div>
+</div>
+</div>
+<Footer/>
     </div>
   );
 }
