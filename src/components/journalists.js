@@ -2,6 +2,7 @@ import React from "react";
 import Image from "../images/Ellipse 56.svg"
 import ImageTwo from "../images/image 8.svg"
 
+
 function journalists() {
   return (
     <div className="flex flex-col gap-4">

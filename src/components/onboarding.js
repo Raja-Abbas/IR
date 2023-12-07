@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import Talkingpoints from "./talkingpoints";
 import Navbar from "./navbar";
 import NavbarResponsive from "./NavbarResponsive";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Signup() {
   const navigate = useNavigate();
@@ -50,12 +52,17 @@ function Signup() {
       setStep(clickedStep);
     }
   };
+    const [areBoxesFilled, setAreBoxesFilled] = useState(false);
 
   const handleNextStep = () => {
     // Validate the inputs before proceeding to the next step
     const currentStepInputs = document.querySelectorAll(
       `[data-step="${step}"] [required]`
     );
+    if (step === 2 && !areBoxesFilled) {
+        toast.error('Please Fill Each Greyed Box With 4 Items!');
+      return;
+    }
 
     let isValid = true;
 
@@ -247,7 +254,7 @@ function Signup() {
             className="bg-[#f5f5f5] rounded-tl-xl rounded-tr-xl w-[80%] mx-auto px-10 py-10"
             data-step="2"
           >
-            <DragAndDrop />
+            <DragAndDrop onBoxesFilled={(filled) => setAreBoxesFilled(filled)} />
           </div>
         )}
         {step === 3 && (
