@@ -29,7 +29,7 @@ function about() {
             leaders and brands to win valuable media coverage with the help of
             AI.
           </div>
-          <div className="max-lg:mx-10 w-5 h-[40px] sm:overflow-hidden mt-14">
+          <div className="max-lg:mx-10 sm:w-5 sm:h-[40px] sm:overflow-hidden mt-14">
             <img src={ArrowsDown} alt="" />
           </div>
         </div>
