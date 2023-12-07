@@ -140,6 +140,11 @@ body{
     padding: 10px 0px;
     background-position: center;
 }
+@media(max-width:1000px){
+    .bg-about{
+        height: auto;
+    }
+}
 
 .dark-bg-dots {
     background-image: radial-gradient(#5643e4 13%,transparent 13%);
