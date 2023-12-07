@@ -96,7 +96,7 @@ const [droppedItems, setDroppedItems] = useState([]);
   onBoxesFilled(allBoxesFilled);
 
   return (
-    <div className='flex max-lg:flex-col   max-lg:gap-4 lg:justify-center lg:gap-2 xl:justify-around'>
+    <div className='flex max-lg:flex-col max-lg:gap-4 lg:justify-center lg:gap-2 xl:justify-around'>
        <div>
         <ToastContainer />
       </div>
@@ -126,12 +126,12 @@ const [droppedItems, setDroppedItems] = useState([]);
             key={boxIndex}
             onDragOver={handleDragOver}
             onDrop={() => handleDrop(boxIndex)}
-            className="lg:w-[350px] xl:w-[500px] min-[1100px]:w-[400px] 2xl:w-[600px] h-[74px] bg-neutral-300 rounded-[20px] flex justify-start gap-5 px-4 items-center"
+            className="lg:w-[400px] xl:w-[500px] min-[1100px]:w-[400px] 2xl:w-[600px] max-xl:h-[250px] xl:h-[74px] bg-neutral-300 rounded-[20px] flex max-xl:flex-wrap justify-start gap-2 px-4 items-center"
           >
             {droppedItems
               .filter((item) => item.boxIndex === boxIndex)
               .map((droppedItem, index) => (
-                <div key={index} className='h-[40px] px-3 rounded-[18px] bg-white border justify-center items-center gap-2 inline-flex text-black text-[14px] font-medium font-Poppins leading-3'>
+                <div key={index} className='h-[40px] px-3 rounded-[18px] bg-white border justify-center items-center gap-1 inline-flex text-black text-[14px] font-medium font-Poppins leading-3'>
                   {droppedItem.item}
                   <button className='text-[grey] font-bold text-[9px] h-5 w-5 flex items-center justify-center border border-[grey] rounded-full' onClick={() => handleCancel(boxIndex, index)}>&#10005;</button>
                 </div>
