@@ -123,7 +123,7 @@ function about() {
           </div>
         </div>
         <div className="flex w-[100%] max-xl:px-10 items-center max-xl:justify-center relative max-xl:flex-col xl:flex xl:px-[184px] min-[2000px]:justify-around mt-20">
-          <div className="max-xl:justify-center max-xl:w-full xl:w-[50%] flex flex-col gap-4">
+          <div className="max-xl:justify-center max-xl:w-full lg:px-[184px] xl:w-[50%] flex flex-col gap-4">
             <div className=" text-neutral-800 text-[40px] font-bold font-Inter">
               Our Technology
             </div>
