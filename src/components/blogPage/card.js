@@ -3,6 +3,8 @@ import Image from "../../images/bitcoin.svg";
 import Image2 from "../../images/diversity-people.svg";
 import Image3 from "../../images/young-smiling.svg";
 import Arrow from "../../images/icon--arow-right-indigo.svg.svg";
+
+
 function card() {
   return (
     <div className="flex max-xl:flex-wrap max-xl:gap-6 justify-center gap-[150px] mt-20">
