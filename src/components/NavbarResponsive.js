@@ -69,7 +69,7 @@ const navigateBlog = useNavigate();
                 <a href="/about">Pricing</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase text-white">
-                <a href="/portfolio">Blog</a>
+                <a href="/portfolio" onClick={handleBlogogClick}>Blog</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase text-white">
                 <a href="/contact">Contact</a>
