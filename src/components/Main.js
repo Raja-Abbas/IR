@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './navbar';
-import Herosection from './HeroSection.js'
+import Herosection from './HeroSection';
 import CenterText from './centerText';
 import Slider from './slider';
 import { Deploy } from './deploy';
 import WhiteBox from './whiteBox';
 import Footer from './footer/footer';
-import NavbarResponsive from './navbarresponsive';
+import NavbarResponsive from './NavbarResponsive';
 
 function Main() {
   return (

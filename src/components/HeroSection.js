@@ -4,7 +4,7 @@ import DoubleTick from "../images/doubletick.svg";
 import { useNavigate } from "react-router-dom";
 
 
-function herosection() {
+function HeroSection() {
      // eslint-disable-next-line react-hooks/rules-of-hooks
    const navigate = useNavigate();
 
@@ -73,4 +73,4 @@ function herosection() {
   );
 }
 
-export default herosection;
+export default HeroSection;
