@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './navbar';
-import HeroSection from './herosection';
+import { HeroSection } from './herosection';
 import CenterText from './centerText';
 import Slider from './slider';
 import { Deploy } from './deploy';
