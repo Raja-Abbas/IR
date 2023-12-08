@@ -7,7 +7,7 @@ import { ProgressBar } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 import Talkingpoints from "./talkingpoints";
 import Navbar from "./navbar";
-import NavbarResponsive from "./NavbarResponsive";
+import NavbarResponsive from "./navbarresponsive";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

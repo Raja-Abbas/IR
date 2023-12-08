@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './navbar';
-import HeroSection from './HeroSection';
+import HeroSect from './herosection';
 import CenterText from './centerText';
 import Slider from './slider';
 import { Deploy } from './deploy';
 import WhiteBox from './whiteBox';
 import Footer from './footer/footer';
-import NavbarResponsive from './NavbarResponsive';
+import NavbarResponsive from './navbarresponsive';
 
 function Main() {
   return (
@@ -14,7 +14,7 @@ function Main() {
         <Navbar/>
       <NavbarResponsive/>
       <div className='max-w-[1600px] mx-auto'>
-      <HeroSection/>
+      <HeroSect/>
       <CenterText/>
       <Slider/>
       <Deploy/>

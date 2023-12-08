@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar";
-import NavbarResponsive from "../NavbarResponsive";
+import NavbarResponsive from "../navbarresponsive";
 import Image from "../../images/business-people.jpg.svg";
 import ImageTwo from "../../images/slider-decoration.svg.svg";
 import ImageThree from "../../images/jason-unsplash.jpg.svg";
