@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './navbar';
-import HeroSect from './herosection';
+import HeroSection from './herosection';
 import CenterText from './centerText';
 import Slider from './slider';
 import { Deploy } from './deploy';
@@ -14,7 +14,7 @@ function Main() {
         <Navbar/>
       <NavbarResponsive/>
       <div className='max-w-[1600px] mx-auto'>
-      <HeroSect/>
+      <HeroSection/>
       <CenterText/>
       <Slider/>
       <Deploy/>
