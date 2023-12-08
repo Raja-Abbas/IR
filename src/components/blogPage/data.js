@@ -24,7 +24,7 @@ function Data({ posts }) {
           </div>
         ))}
       </div>
-      <div className='bg-[#F5F5F7] mt-40 px-10 py-10 w-[370px]'>
+      <div className='bg-[#F5F5F7] mt-40 px-10 py-10 w-[370px] max-xl:mx-auto'>
         <div className="text-neutral-800 text-2xl font-bold font-Inter">Search</div>
         <div className="flex max-md:flex-col max-md:gap-4 justify-center items-center mt-10">
 <input className="w-[240px] h-[52px] bg-[#FFFFFF] rounded-[10px] px-5" placeholder="Enter keyword..."/>
