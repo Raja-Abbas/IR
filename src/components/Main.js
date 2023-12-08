@@ -6,7 +6,7 @@ import Slider from './slider';
 import { Deploy } from './deploy';
 import WhiteBox from './whiteBox';
 import Footer from './footer/footer';
-import NavbarResponsive from './navbarresponsive';
+import NavbarResponsive from './NavbarResponsive';
 
 function Main() {
   return (

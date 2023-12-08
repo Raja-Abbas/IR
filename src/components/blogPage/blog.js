@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from "../navbar";
-import NavbarResponsive from "../navbarresponsive";
+import NavbarResponsive from "../NavbarResponsive";
 import { useNavigate } from "react-router-dom";
 import  Card from './card';
 import Data from './data';

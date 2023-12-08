@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./navbar";
-import NavbarResponsive from "./navbarresponsive";
+import NavbarResponsive from "./NavbarResponsive";
 import Icon from "../images/i.svg";
 import ShareLink from "react-linkedin-share-link";
 import Footer from "./footer/footer";
