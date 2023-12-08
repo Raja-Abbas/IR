@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-export default function navbarresponsive() {
+export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   // eslint-disable-next-line react-hooks/rules-of-hooks
    const navigateAbout = useNavigate();
