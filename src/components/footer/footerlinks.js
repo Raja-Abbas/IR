@@ -23,9 +23,9 @@ function footerlinks() {
   return (
     <div className="min-[1750px]:me-[300px]">
     <div className="mt-4 mb-20 xl:mx-60 lg:mx-20 flex justify-between max-lg:flex-col lg:me-32">
-      <div className="w-[185.18px] h-[76.63px] relative max-lg:mx-auto">
+      <div className="w-[185.18px] h-[76.63px] relative max-lg:mx-auto cursor-pointer" onClick={handleLoginClick}>
         <div className="w-[79.93px] h-[76.63px] left-0 top-0 absolute">
-          <div className="w-[68.06px] h-[68.06px] left-0 top-0 absolute cursor-pointer" onClick={handleLoginClick}>
+          <div className="w-[68.06px] h-[68.06px] left-0 top-0 absolute">
             <img src={RLogo} alt=""/>
           </div>
         </div>
