@@ -9,7 +9,7 @@ function Data({ posts }) {
     <div className='flex max-xl:flex-col justify-center'>
       <div className='flex flex-col gap-20 2xl:justify-around mt-40'>
         {posts.map((post, index) => (
-          <div key={index} className='flex max-xl:flex-col justify-center items-center gap-10 md:pe-20'>
+          <div key={index} className='flex max-lg:flex-col justify-center items-center gap-10 md:pe-20'>
             <img src={post.image} alt='' className='w-[400px]' loading='lazy'/>
             <div className='max-md:px-4 md:w-[558px]'>
               <div className="text-neutral-500 text-[14.88px] font-normal font-Inter">{post.date}</div>
@@ -25,7 +25,7 @@ function Data({ posts }) {
           </div>
         ))}
       </div>
-      <div className='bg-[#F5F5F7] mt-40 px-10 py-10 w-[370px] max-xl:mx-auto'>
+      <div className='bg-[#F5F5F7] mt-40 px-10 py-10 w-[370px] max-xl:mx-auto max-xl:hidden'>
         <div className="text-neutral-800 text-2xl font-bold font-Inter">Search</div>
         <div className="flex max-md:flex-col max-md:gap-4 justify-center items-center mt-10">
 <input className="w-[240px] h-[52px] bg-[#FFFFFF] rounded-[10px] px-5" placeholder="Enter keyword..."/>
