@@ -277,7 +277,7 @@ function blog() {
             Intelligent Insights Blog
           </div>
         </div>
-        <div className='px-5'>
+        <div className='sm:px-5 2xl:px-0'>
         <Card/>
         <Data posts={postsData}/>
         </div>
