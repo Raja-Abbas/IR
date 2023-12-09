@@ -14,7 +14,7 @@ function Data({ posts }) {
               <div className="text-neutral-500 text-[14.88px] font-normal font-Inter">{post.date}</div>
               <div className="text-black text-[25px] font-bold font-Inter hover:underline cursor-pointer">{post.title}</div>
               <div className="text-neutral-600 text-[17px] mt-10 font-normal font-Inter leading-relaxed">{post.description}</div>
-              <div className="pt-8 pb-2 flex gap-2 hover:underline cursor-pointer text-indigo-600 hover:gap-5 transition-all">
+              <div className="pt-8 pb-2 inline-flex gap-2 hover:underline cursor-pointer text-indigo-600 hover:gap-5 transition-all">
                 <div className="text-indigo-600 text-2xl font-normal font-Inter">
                   Read More
                 </div>
