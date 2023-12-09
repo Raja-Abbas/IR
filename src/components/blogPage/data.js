@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'; // Import PropTypes for type-checking
 import Arrow2 from "../../images/icon--arrow-hook-blue.svg.svg"
 import Arrow from "../../images/icon--arow-right-indigo.svg.svg";
+import Image from "../../images/icon--search.svg.svg"
 
 function Data({ posts }) {
   return (
@@ -30,7 +31,7 @@ function Data({ posts }) {
 <input className="w-[240px] h-[52px] bg-[#FFFFFF] rounded-[10px] px-5" placeholder="Enter keyword..."/>
 <div className="w-20 h-[52px] relative bg-indigo-600 rounded-[10px] border hover:bg-black cursor-pointer transition-all md:-ml-4 border-indigo-600 flex justify-center items-center">
     <div className="text-center text-teal-200 text-[17px] font-normal font-Inter">
-        <img src={Image} alt=''/>
+        <img src={Image} alt='' className='opacity-40'/>
     </div>
 </div>
 </div>
