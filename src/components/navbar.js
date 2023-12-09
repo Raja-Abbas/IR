@@ -40,7 +40,7 @@ function Navbar() {
   return (
     <div
       className={`flex justify-between px-4 me-6 py-4 items-center max-lg:hidden zindex ${
-        isScrolled ? 'fixed w-full my-0 mx-0 py-3 px-6 top-0 bg-white shadow-xl' : ''
+        isScrolled ? 'fixed w-full my-0 mx-0 py-4 px-4 top-0 bg-white shadow-xl' : ''
       }`}
     >
       <div
