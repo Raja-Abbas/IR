@@ -7,7 +7,7 @@ import Arrow from "../../images/icon--arow-right-indigo.svg.svg";
 
 function card() {
   return (
-    <div className="flex max-xl:flex-wrap max-xl:gap-6 justify-center gap-[150px] mt-20">
+    <div className="flex max-xl:flex-wrap max-xl:gap-6 justify-center gap-[30px] mt-20">
       <div className="max-w-sm rounded overflow-hidden shadow-xl">
         <img className="w-full" src={Image} alt="" />
         <div className="px-6 py-4">
